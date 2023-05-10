@@ -1,6 +1,6 @@
 {
   "name": "faviconic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "🔍 Find the logo for any website using just the domain. No dependencies 🎉",
   "author": "Joshua Snyder <joshua@mindful.ai>",
   "main": "dist/index.js",
