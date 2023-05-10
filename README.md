@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/github/stars/joshsny/faviconic.svg?style=for-the-badge">
     <img src="https://img.shields.io/github/license/joshsny/faviconic.svg?style=for-the-badge">
     <br />
-    <a href="https://script.google.com/d/1292oAlLR3zBW8f5XyI1RwTyX2kDFWCShwka_aRRhD43nyFPXB8EjA5r1/edit?usp=sharing"><b>View Demo</b></a>
+    <a href="https://github.com/joshsny/faviconic#getting-started"><b>Get Started</b></a>
     ·
     <a href="https://github.com/joshsny/faviconic/issues"><b>Report Bug</b></a>
   </p>
@@ -53,6 +53,17 @@ const { url, size } = getIcon("yahoo.com") // with icon size
 
 ## Configuration
 
+When using `getIcon` the following options are available:
+
+-   `targetSize`: If multiple icons are found, the icon closest to this size will be selected. Defaults to `512`, value is in pixels.
+
+Here is an example with the default value for each option:
+
+```javascript
+const { url } = getIcon("yahoo.com", {
+  targetSize: 512
+})
+```
 
 <!-- LICENSE -->
 
@@ -65,12 +76,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Joshua Snyder - [@joshsny](https://twitter.com/joshsny) - [LinkedIn](https://linkedin.com/in/joshsny)
-
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

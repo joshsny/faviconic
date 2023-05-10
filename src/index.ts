@@ -1,6 +1,12 @@
+type Options = {
+  targetSize?: number;
+};
+
 const getIcon = async (
-  domain: string
+  domain: string,
+  options: Options = {}
 ): Promise<{ url?: string; size: { width: number; height: number } }> => {
+  const { targetSize = 512 } = options;
   try {
     const url = domain.startsWith('http') ? domain : `https://${domain}`;
     // Fetch the target domain's HTML content
@@ -26,12 +32,11 @@ const getIcon = async (
       const manifestURL = hrefMatch ? hrefMatch[1] : null;
 
       if (manifestURL) {
-        const baseURL = new URL(manifestURL, `https://${domain}`);
+        const baseURL = new URL(manifestURL, url);
         const manifestResponse = await fetch(baseURL.href);
         const manifestData = await manifestResponse.json();
 
         if (manifestData.icons && manifestData.icons.length > 0) {
-          const targetSize = 512;
           const largestIcon = manifestData.icons.reduce(
             (
               closest: {
@@ -80,7 +85,7 @@ const getIcon = async (
         }
 
         const href = hrefMatch ? hrefMatch[1] : '';
-        const sizes = sizesMatch ? sizesMatch[1] : '64x64';
+        const sizes = sizesMatch ? sizesMatch[1] : '32x32';
         const [width, height] = sizes.split('x').map(Number);
         const size = { width, height };
         return { url: href, size };
