@@ -1,12 +1,29 @@
-# Faviconic
+<!-- PROJECT LOGO -->
+<p align="center">
+  <a href="https://github.com/joshsny/faviconic">
+    <img src="https://i.ibb.co/N33NmB2/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-[![NPM version](https://img.shields.io/npm/v/npm-package-template.svg)](https://www.npmjs.com/package/faviconic)
+  <h3 align="center">Faviconic</h3>
+  <p align="center">
+    Get any logo from a domain.
+    <br />
+    <br />
+    <img src="https://img.shields.io/github/stars/joshsny/faviconic.svg?style=for-the-badge">
+    <img src="https://img.shields.io/github/license/joshsny/faviconic.svg?style=for-the-badge">
+    <br />
+    <a href="https://script.google.com/d/1292oAlLR3zBW8f5XyI1RwTyX2kDFWCShwka_aRRhD43nyFPXB8EjA5r1/edit?usp=sharing"><b>View Demo</b></a>
+    ·
+    <a href="https://github.com/joshsny/faviconic/issues"><b>Report Bug</b></a>
+  </p>
+</p>
 
-Get the icon from any domain with no external dependencies.
+<!-- GETTING STARTED -->
 
-## Install
+Favicon gets icons for any domain name.
+## Getting Started
 
-Install faviconic using `npm` or `yarn`.
+To start using Faviconic install it using `npm` or `yarn`.
 
 `yarn add faviconic`
 
@@ -14,7 +31,10 @@ or
 
 `npm install faviconic --save`
 
-## Usage
+<!-- USAGE EXAMPLES -->
+
+## How to use Faviconic
+
 
 Faviconic is very simple to use. Just import the `getIcon` function and you are good to go.
 
@@ -31,6 +51,42 @@ const { url, size } = getIcon("yahoo.com") // with icon size
 ```
 
 
+## Configuration
+
+
+<!-- LICENSE -->
+
 ## License
 
-This is licensed with the [MIT](https://github.com/joshsny/faviconic/blob/master/LICENSE) license, so you can use it however you like 😊
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Joshua Snyder - [@joshsny](https://twitter.com/joshsny) - [LinkedIn](https://linkedin.com/in/joshsny)
+
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/joshsny/faviconic.svg?style=for-the-badge
+[contributors-url]: https://github.com/joshsny/faviconic/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/joshsny/faviconic.svg?style=for-the-badge
+[forks-url]: https://github.com/joshsny/faviconic/network/members
+[stars-shield]: https://img.shields.io/github/stars/joshsny/faviconic.svg?style=for-the-badge
+[stars-url]: https://github.com/joshsny/faviconic/stargazers
+[issues-shield]: https://img.shields.io/github/issues/joshsny/faviconic.svg?style=for-the-badge
+[issues-url]: https://github.com/joshsny/faviconic/issues
+[license-shield]: https://img.shields.io/github/license/joshsny/faviconic.svg?style=for-the-badge
+[license-url]: https://github.com/joshsny/faviconic/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/joshsny
+
+
